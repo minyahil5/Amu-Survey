@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMU Satisfaction Survey System</title>
+    
+    
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
+        header { background-color: #00447c; color: white; padding: 1em 0; text-align: center; }
+        header h1 { margin: 0; }
+        nav { background-color: #f4f4f4; padding: 1em; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #00447c; font-weight: bold; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        section { margin-bottom: 30px; padding: 20px; border-bottom: 1px solid #eee; }
+        section:last-child { border-bottom: none; }
+        h2 { color: #00447c; border-bottom: 2px solid #00447c; padding-bottom: 5px; }
+        h3 { color: #333; }
+        ul { list-style: disc; margin-left: 20px; }
+        .feature-category, .user-role { background-color: #f9f9f9; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        .objective-item, .feature-item { margin-bottom: 10px; }
+        .objective-item::before { content: "✓ "; color: green; font-weight: bold; }
+        footer { text-align: center; padding: 20px; background-color: #333; color: white; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AMU Satisfaction Survey System</h1>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#users-roles">Users & Roles</a>
+        <a href="#features">Key Features</a>
+        <a href="#login">Login/Access System</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="overview">
+            <h2>1. Project Overview</h2>
+            <p>The University Satisfaction Survey System is a web-based platform designed to collect, analyze, and report feedback from students, faculty, and staff. The system helps the university assess various aspects such as academic quality, campus facilities, faculty performance, and overall student experience.</p>
+        </section>
+
+        <section id="objectives">
+            <h2>2. Objectives</h2>
+            <div class="objective-item">
+                <strong>Improve University Services:</strong> Identify areas that need improvement based on user feedback.
+            </div>
+            <div class="objective-item">
+                <strong>Enhance Student & Faculty Experience:</strong> Address concerns related to academics, facilities, and administration etc.
+            </div>
+            <div class="objective-item">
+                <strong>Automate Data Collection:</strong> Replace manual surveys with a digital, user-friendly system.
+            </div>
+            <div class="objective-item">
+                <strong>Provide Real-Time Reports:</strong> Generate insightful analytics to support decision-making.
+            </div>
+        </section>
+
+        <section id="users-roles">
+            <h2>3. Users & Roles</h2>
+            <div class="user-role">
+                <h3>Administrator</h3>
+                <ul>
+                    <li>Manage user accounts and permissions.</li>
+                    <li>Create and manage survey templates.</li>
+                    <li>View and analyze reports.</li>
+                </ul>
+            </div>
+            <div class="user-role">
+                <h3>Survey Creator (Department Heads, Faculty, or Admins etc.)</h3>
+                <ul>
+                    <li>Design and publish surveys.</li>
+                    <li>Monitor response rates.</li>
+                    <li>Access specific reports.</li>
+                </ul>
+            </div>
+            <div class="user-role">
+                <h3>Survey Respondents (Students, Faculty, Staff etc.)</h3>
+                <ul>
+                    <li>Participate in surveys assigned to them.</li>
+                    <li>Provide feedback anonymously (if allowed).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>4. Key Features</h2>
+
+            <div class="feature-category">
+                <h3>Survey Management</h3>
+                <ul>
+                    <li class="feature-item">Create different types of surveys (e.g., student satisfaction, faculty evaluation, service feedback etc.).</li>
+                    <li class="feature-item">Use multiple question formats (MCQs, Likert scale, open-ended, etc.).</li>
+                    <li class="feature-item">Set survey start and end dates.</li>
+                </ul>
+            </div>
+
+            <div class="feature-category">
+                <h3>User Management</h3>
+                <ul>
+                    <li class="feature-item">Role-based access control (Admin, Survey Creator, Respondent).</li>
+                </ul>
+            </div>
+
+            <div class="feature-category">
+                <h3>Survey Participation</h3>
+                <ul>
+                    <li class="feature-item">Notifications via email or SMS reminders.</li>
+                    <li class="feature-item">Mobile-friendly survey access.</li>
+                    <li class="feature-item">Option for anonymous feedback.</li>
+                </ul>
+            </div>
+
+            <div class="feature-category">
+                <h3>Data Collection & Analysis</h3>
+                <ul>
+                    <li class="feature-item">Real-time response tracking.</li>
+                    <li class="feature-item">Statistical analysis (charts, graphs, sentiment analysis).</li>
+                    <li class="feature-item">Export data in Excel, PDF, or CSV formats.</li>
+                </ul>
+            </div>
+
+            <div class="feature-category">
+                <h3>Security & Privacy</h3>
+                <ul>
+                    <li class="feature-item">Data encryption and secure access.</li>
+                    <li class="feature-item">Role-based permissions to protect sensitive data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="login">
+            <h2>Access the System</h2>
+            <p>Authorized users can log in to the AMU Satisfaction Survey System using their university credentials.</p>
+            <p style="text-align: center;">
+                
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #00447c; color: white; text-decoration: none; border-radius: 5px;">Login to Survey System</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© [Current Year] AMU - University Satisfaction Survey System. All rights reserved.</p>
+        <p><a href="#privacy-policy" style="color: #ccc;">Privacy Policy</a> | <a href="#contact-support" style="color: #ccc;">Contact Support</a></p>
+    </footer>
+
+</body>
+</html>
