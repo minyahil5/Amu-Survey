@@ -28,5 +28,7 @@ if ($conn->connect_error) {
     }
 }
 
+/** @var mysqli $conn */
+
 
 ?>

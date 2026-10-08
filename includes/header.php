@@ -29,6 +29,8 @@ if (!isset($conn)) {
     }
 }
 
+/** @var mysqli $conn */
+
 
 $body_classes_value = isset($body_class) ? htmlspecialchars($body_class) : '';
 $container_classes_value = isset($page_container_class) ? htmlspecialchars($page_container_class) : '';

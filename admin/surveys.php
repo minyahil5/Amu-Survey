@@ -8,6 +8,12 @@ if (!isset($conn)) {
     require_once __DIR__ . '/../includes/db_connect.php';
 }
 
+if (!isset($conn) || !($conn instanceof mysqli) || $conn->connect_error) {
+    exit('Database connection not available.');
+}
+
+/** @var mysqli $conn */
+
 
 $action = isset($_GET['action']) ? trim($_GET['action']) : null;
 $survey_id_to_action = isset($_REQUEST['id']) ? (int)$_REQUEST['id'] : null; 

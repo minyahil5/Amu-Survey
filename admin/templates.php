@@ -7,6 +7,12 @@ if (!isset($conn)) {
     require_once __DIR__ . '/../includes/db_connect.php';
 }
 
+if (!isset($conn) || !($conn instanceof mysqli) || $conn->connect_error) {
+    exit('Database connection not available.');
+}
+
+/** @var mysqli $conn */
+
 
 $action = isset($_GET['action']) ? $_GET['action'] : 'list'; 
 $template_id_to_edit = isset($_GET['id']) ? (int)$_GET['id'] : null;

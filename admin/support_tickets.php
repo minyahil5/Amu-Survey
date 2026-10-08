@@ -16,6 +16,8 @@ if (!isset($conn) || !($conn instanceof mysqli) || $conn->connect_error) {
     $error_loading_tickets = false;
 }
 
+/** @var mysqli $conn */
+
 
 
 
